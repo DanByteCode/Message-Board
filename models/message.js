@@ -13,7 +13,6 @@ mon.connect(config.URI)
 
 async function getAll () {
   const result = await Message.find({})
-  console.log(result)
   return result
 }
 
