@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>MESSAGE BOARD</h1>
+  <main>
+    <form method="post" class="single-form">
+      <label for="user">Name: </label>
+      <input id="user" name="user" type="text" maxlength="24" placeholder="Your name..." autofocus required>
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" maxlength="120" placeholder="Send your greetings..." required></textarea>
+      <button>ADD MESSAGE</button>
+    </form>
+  </aside>
+</body>
+
+</html>

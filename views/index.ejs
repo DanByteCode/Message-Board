@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>MESSAGE BOARD</h1>
+    <form method="post" action="/new">
+      <label for="user" class="user-label">Name: 
+        <input id="user" name="user" type="text" maxlength="24" placeholder="Your Name..." required>
+      </label>
+      <label for="message" class="message-label">Message:
+        <input id="message" name="message" type="text" maxlength="120" placeholder="Send your greetings..." required>
+      </label>
+      <button>ADD MESSAGE</button>
+    </form>
+  <main class="board">
+    <% list.forEach((m)=>{ %>
+      <article>
+        <h2>
+          <%= m.user %>
+        </h2>
+        <p>
+          <%= m.text %><br>
+        </p>
+          <p class="date">
+            <%= `${m.date.getDate()}/${m.date.getMonth()}/${m.date.getFullYear()}` %>
+          </p>
+      </article>
+      <% }) %>
+  </main>
+</body>
+
+</html>

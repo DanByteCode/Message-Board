@@ -1,0 +1,102 @@
+:root {
+  background-color: black;
+  color: aliceblue;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+h2{
+  text-wrap: pretty;
+  margin-block: 0.4em;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+main{
+  width: 100%;
+  max-width: 1200px;
+}
+main.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding-bottom: 12px;
+}
+
+article {
+  padding: 16px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  position: relative;
+}
+
+form {
+  width: 100%;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border: 2px solid gray;
+}
+p{
+  word-wrap: break-word;
+}
+button {
+  font-weight: bolder;
+  align-self: flex-end;
+  padding: 16px;
+  background-color: black;
+  border-color: gainsboro;
+  border-radius: 5px;
+  text-wrap: nowrap;
+  align-self: center;
+}
+button:hover{
+  cursor: pointer;
+  background-color: darkblue;
+}
+label{
+  font-weight: bolder;
+}
+input{
+  margin-block: 8px;
+  padding: 8px;
+}
+textarea{
+  padding: 8px;
+  width: 100%;
+  height: 4em;
+  max-height: fit-content;
+  resize: none;
+}
+.single-form{
+  margin: auto;
+  padding: 24px 32px;
+  max-width: 600px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.date{
+  position: absolute;
+  top: 0;
+  right: 8px;
+  color: #999999;
+  font-size: smaller;
+  font-style: italic;
+}
+.message-label{
+  width: 100%;
+}
+#message{
+  width: 100%;
+}
