@@ -1,7 +1,11 @@
 :root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
   background-color: black;
-  color: aliceblue;
+  color: #d6e1e9;
   color-scheme: dark;
+  --border: #374450;
+  --bg: #19181f;
 }
 
 * {
@@ -25,19 +29,21 @@ main{
 }
 main.board {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 16px;
   padding-bottom: 12px;
 }
 
 article {
+  background-color: var(--bg);
   padding: 16px;
-  border: 2px solid gray;
+  border: 3px solid var(--border);
   border-radius: 5px;
   position: relative;
 }
 
 form {
+  background-color: var(--bg);
   width: 100%;
   max-width: 1200px;
   width: 100%;
@@ -46,7 +52,8 @@ form {
   align-items: center;
   gap: 16px;
   padding: 12px;
-  border: 2px solid gray;
+  border: 3px solid var(--border);
+  border-radius: 5px;
 }
 p{
   word-wrap: break-word;
@@ -55,9 +62,11 @@ button {
   font-weight: bolder;
   align-self: flex-end;
   padding: 16px;
-  background-color: black;
-  border-color: gainsboro;
-  border-radius: 5px;
+  font-size: large;
+  background-color: #374450;
+  border-color: #495f74;
+  border-width: 3px;
+  border-radius: 12px;
   text-wrap: nowrap;
   align-self: center;
 }
@@ -69,8 +78,11 @@ label{
   font-weight: bolder;
 }
 input{
+  font-size: large;
+  background-color: #262627;
   margin-block: 8px;
   padding: 8px;
+  border-radius: 5px;
 }
 textarea{
   padding: 8px;
